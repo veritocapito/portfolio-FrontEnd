@@ -1,213 +1,450 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
+html, body { height: 100%; }
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  color: rgb(241, 68, 6);
+  position: static;
+
+}
+
+.logo{
+  width: 6rem;
+  color: rgb(241, 68, 6);
+  font-size: medium;
+}
+.logo:hover{
+  cursor: pointer;
+  color: white ;
+}
+
+
+
+.redes a{
+  text-decoration: none;
+  margin-right: 1rem;
+  color:orangered ;
+}
+
+#redes-footer a{
+  text-decoration: none;
+  margin-right: 1rem;
+  color:white ;
+}
+
+.card-title a:hover{
+  color:orangered ;
+  text-decoration: none;
+}
+
+.btn-main {
+  color:orangered;
+  margin-right: 2rem;
+  text-align: center;
+  border: none;
+
+}
+
+.btn-main:hover, .redes a:hover {
+  color: white;
+
+}
+
+#redes-footer a:hover{
+  color: orangered;
+}
+
+div.redes>i.bi{
+  margin: 0.5rem 1rem;
+  font-size: 1.5rem;
+}
+
+div.redes>i.bi:hover {
+  cursor: pointer;
+  color: white ;
+
+}
+
+.sec-about{
+  width: 100%;
+  max-height: 60rem;
+  padding: 10rem;
+  background-image: url(../src/assets/img/teclado.avif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 50%;
+  display: block;
+  margin: auto;
+  padding-top: 2rem;
+}
+
+.container-about {
+  width: 80%;
+}
+
+.container-about h1{
+  font-size: 2.8em;
+  margin-bottom: 5rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.img-about {
+  float: left;
+  padding: 2rem;
+
+}
+
+.img-about img {
+  border-radius: 5rem;
+  width: 100%;
+  height: auto;
+}
+
+.sec-education{
+  display: flex;
+  width: 100%;
+  height: 70rem;
+  align-items: center;
+}
+  
+.container-md{
+  max-width: 50%;
+  box-shadow: 15px 10px 20px -10px rgba(0,0,0,0.2);
+  padding: 5rem;
+}
+
+.card{
+  border: none;
+  
+}
+
+#logos{
+  max-height: 7rem;
+}
+
+.sec-projects{
+  display: flex;
+  width: 100%;
+  height: 70rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+
+
+.card-title a {
+  color: #000004;
+  text-decoration: none;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.card-title a:hover{
+  color:orangered ;
+  text-decoration: none;
+}
+
+.col-img{
+  height: 20rem;
+
+}
+
+.col-img > img {
+  transition: 1.5s;
+  object-fit: cover;
+}
+
+
+.col-img>img:hover{
+  transform: scale(1.2);
+}
+
+.img-fluid{
+  margin-top: 6rem;
+  
+}
+
+.sec-skills{
+  display: flex;
+  background-color: orangered;
+  width: 100%;
+  height: 50rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+#skills>i.bi{
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 4rem;
+  justify-content: space-between;
+  display: inline-block;
+}
+
+
+
+#skills>i.bi:hover{
+  animation: animar-icono 1.2s ease-in-out 1 normal both;
+}
+
+@keyframes animar-icono {
+  from {
+    transform: scale3d(1,1,1);
+  }
+
+  30%{
+    transform: scale3d(0.75,1.25,1);
+    color: antiquewhite;
+  }
+
+  50%{
+    transform: scale3d(1.15,0.85,1);
+  }
+
+  65%{
+    transform: scale3d(0.95,1.05,1);
+  }
+
+  80%{
+    transform: scale3d(1.05,0.95,1);
+    color: rgb(33,37,41);
   }
   
-  .navbar {
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
-    color: rgb(241, 68, 6);
-    position: static;
-  
+  to {
+    transform: scale3d(1,1,1);
   }
-  
-  .logo{
-    width: 6rem;
-    color: rgb(241, 68, 6);
-    font-size: medium;
-  }
-  .logo:hover{
-    cursor: pointer;
-    color: white ;
-  }
-  
-  #foto{
-    width: 100%;
-    border-radius: 3rem;
-  }
-  .redes a{
-    text-decoration: none;
-    margin-right: 1rem;
-    color:orangered ;
-  }
-  
-  .card-title a:hover{
-    color:orangered ;
-    text-decoration: none;
-  }
-  
-  .btn-main {
-    color:orangered;
-    margin-right: 2rem;
-    text-align: center;
-    border: none;
-  
-  }
-  
-  .btn-main:hover, .redes a:hover {
-    color: white;
-  
-  }
-  
-  div.redes>i.bi{
-    margin: 0.5rem 1rem;
-    font-size: 1.5rem;
-  }
-  
-  div.redes>i.bi:hover {
-    cursor: pointer;
-    color: white ;
-  
-  }
-  
+}
+
+
+footer{
+  padding-top: 5rem;
+  background-color: rgb(33,37,41);
+}
+
+footer h5{
+  color: white;
+  font-size: x-small;
+  padding-left: 15rem;
+
+}
+
+div #redes-footer{
+  display: flex;
+  justify-content: space-around;
+  padding-right: 10rem;
+
+}
+
+@media screen and (max-width:768px){
+
   .sec-about{
-    display: flex;
-    width: 100%;
-    height: 45rem;
-    padding: 10rem;
-    background-image: url(../img/teclado.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 5rem;
+    max-height: 50rem;
+  }  
+  .container {
+  width: 60%;
+  padding-top: 0.5rem;
   }
   
-  #foto{
-    margin-top: 1rem;
+  .container-about {
+  width: 100%;
+  text-align: center;
+  }
+
+  .container-about h1{
+    font-size: 2em;
+    margin-bottom: 0%;  
   }
   
+  .img-about {
+    float: none;
+    padding: 2rem;  
+  }
   
+  .img-about img{
+    max-width: 50%;
+  }
+
   .sec-education{
-    display: flex;
-    width: 100%;
-    height: 110rem;
-    align-items: center;
-    background-color: transparent;
-    background-image: url(../img/laptop.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
+    text-align: center;
+    min-height: 100rem;
   }
-  
-  .row{
-    justify-content: center;
     
+  .container-md{
+    max-width: 70%;
+    box-shadow: none;
   }
-  
-  .card{
-    border: none;
-    
-  }
-  
-  #logos{
-    max-height: 7rem;
-  }
-  
+
   .sec-projects{
-    display: flex;
-    width: 100%;
-    height: 60rem;
+    height: auto;
     padding: 2rem;
-    align-items: center;
   }
-  
-  .carousel-item{
-    width: 100%;
-    height: 30rem;
-    transition: transform 2s ease-in-out;
-  }
-  
-  .carousel-fade .active.carousel-item-start,
-  .carousel-fade .active.carousel-item-end {
-    transition: opacity 0s 2s;
-  }
-  
-  
-  .card-title a {
-    color: #000004;
-    text-decoration: none;
-  
-  }
-  
-  .card-title a:hover{
-    color:orangered ;
-    text-decoration: none;
-  }
-  
+
   .sec-skills{
-    display: flex;
-    background-color: orangered;
-    width: 100%;
-    height: 40rem;
-    padding: 2rem;
-    align-items: center;
-  
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
   }
   
-  div>i.bi{
-    margin: 2rem;
-    align-content: center;
-    font-size: 4rem;
+  #skills>i.bi{
+    padding: 0.5rem;
+    font-size: 2.5rem;
+  }
+
+  div #redes-footer{
+    padding-right: 0rem;
   }
   
-  
-  footer .col-md{
-    color: white;
-    font-size: x-small;
-  
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 992px){
+
+
+  .container {
+  width: 80%;
+  padding-top: 0.5rem;
   }
   
+  .container-about {
+  width: 100%;
+  text-align: center;
+  }
+
+  .container-about h1{
+    font-size: 2em;
+    margin-bottom: 0%;  
+  }
   
-  @media screen and (max-width:600px){
-    body{
-      flex-direction: column;
-    }
+  .img-about {
+    float: none;
+    padding: 2rem;  
+  }
   
-  
-    section{
-      margin: 0;
-      width: 100%;
-    }
-  
-    footer{
-      height: 10px;
-    }
+  .img-about img{
+    max-width: 30%;
+  }
     
-  
+  .container-md{
+    max-width: 100%;
+    box-shadow: none;
+    padding: 5rem;
   }
-  
-  @media screen and (min-width: 601px) and (max-width: 960px){
-    body{
-      flex-direction: column;
-    }
-  
-  
-    section{
-      margin: 0;
-    }
-  
-  
-    footer{
-      height: 10px;
-    }
-  
-  }
-  
-  @media screen and (min-width: 961px) and (max-width: 1280px){
-    body{
-      flex-direction: column;
-    }
-  
-    h1{
-      font-size: medium;
-    }
-  
   
 
-  
-    footer{
-      height: 5rem;
-    }
-    
+  .sec-projects{
+    height: auto;
   }
   
+.sec-projects>.container>.row>.col-md-3{
+    width: 100%;
+
+  }
+
+  .sec-skills{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  
+  #skills>i.bi{
+    padding: 0rem;
+    font-size: 2.5rem;
+  }
+
+  div #redes-footer{
+    padding-right: 0rem;
+  }
+  
+  footer h5 {
+    text-align: center;
+    padding-left: 0rem;
+}
+
+
+
+}
+
+@media screen and (min-width: 993px) and (max-width: 1500px){
+
+  .container {
+  width: 95%;
+  padding-top: 1.5rem;
+  }
+  
+  .container-about {
+    width: 90%;
+    padding-right: 1rem;
+  }
+
+  .container-about h1{
+    font-size: 2em;
+    margin-bottom: 1rem;  
+  }
+  
+  .img-about {
+    float: left;
+    padding: 2rem;  
+  }
+  
+  .img-about img{
+    max-width: 100%;
+  }
+    
+  .container-md{
+    max-width: 100%;
+    box-shadow: none;
+    padding: 5rem;
+  }
+  
+
+  .sec-projects{
+    height: auto;
+  }
+  
+  .sec-projects>.container>.row>.col-md-3{
+    width: 100%;
+
+  }
+
+  .sec-skills{
+    width: 100%;
+    height: auto;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  }
+  
+  #skills>i.bi{
+    padding: 0rem;
+    font-size: 2.5rem;
+  }
+
+  div #redes-footer{
+    padding-right: 0rem;
+    justify-content: space-evenly
+  }
+  
+  footer h5 {
+    text-align: center;
+    padding-left: 0rem;
+  }
+
+
+}
+
+
+
