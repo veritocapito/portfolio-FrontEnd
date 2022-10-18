@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&display=swap');
-html, body { height: 100%; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300&family=Roboto:ital,wght@0,100;0,400;0,500;0,900;1,300;1,700&display=swap');html, body { height: 100%; }
 * {
   margin: 0;
   padding: 0;
@@ -9,42 +8,36 @@ html, body { height: 100%; }
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  color: rgb(241, 68, 6);
   position: static;
 
 }
 
 .logo{
   width: 6rem;
-  color: rgb(241, 68, 6);
+  color: #ff8906;
   font-size: medium;
 }
+
 .logo:hover{
   cursor: pointer;
   color: white ;
 }
 
-
-
 .redes a{
   text-decoration: none;
   margin-right: 1rem;
-  color:orangered ;
+  color:#ff8906;
 }
 
-#redes-footer a{
-  text-decoration: none;
-  margin-right: 1rem;
-  color:white ;
-}
+
 
 .card-title a:hover{
-  color:orangered ;
+  color: #e53170 ;
   text-decoration: none;
 }
 
 .btn-main {
-  color:orangered;
+  color:#ff8906;
   margin-right: 2rem;
   text-align: center;
   border: none;
@@ -57,7 +50,7 @@ html, body { height: 100%; }
 }
 
 #redes-footer a:hover{
-  color: orangered;
+  color: #ff8906;
 }
 
 div.redes>i.bi{
@@ -67,13 +60,13 @@ div.redes>i.bi{
 
 div.redes>i.bi:hover {
   cursor: pointer;
-  color: white ;
+  color: antiquewhite ;
 
 }
 
 .sec-about{
   width: 100%;
-  max-height: 60rem;
+  max-height: 70rem;
   padding: 10rem;
   background-image: url(../src/assets/img/teclado.avif);
   background-position: center;
@@ -81,18 +74,16 @@ div.redes>i.bi:hover {
   background-size: cover;
   justify-content: center;
   font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
+
 }
 
 .container {
   width: 50%;
-  display: block;
-  margin: auto;
   padding-top: 2rem;
 }
 
 .container-about {
-  width: 80%;
+  width: 100%;
 }
 
 .container-about h1{
@@ -114,57 +105,86 @@ div.redes>i.bi:hover {
 }
 
 .sec-education{
-  display: flex;
+  position: relative;
   width: 100%;
-  height: 70rem;
+  height: 80rem;
   align-items: center;
+  background: #212529;
 }
   
 .container-md{
   max-width: 50%;
-  box-shadow: 15px 10px 20px -10px rgba(0,0,0,0.2);
-  padding: 5rem;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.container-md h2{
+  font-size: xx-large;
+  font-weight: 800;
+  color: #e53170;
+  padding: 3rem;
 }
 
 .card{
   border: none;
-  
+  background: transparent;
+  color: #a7a9be ;
 }
 
 #logos{
   max-height: 7rem;
 }
 
-.sec-projects{
-  display: flex;
-  width: 100%;
-  height: 70rem;
-  padding: 2rem;
-  align-items: center;
-}
-
-
-
 .card-title a {
-  color: #000004;
+  color: antiquewhite;
   text-decoration: none;
   font-size: medium;
   font-weight: bold;
 }
 
 .card-title a:hover{
-  color:orangered ;
+  color: #ff8906;
   text-decoration: none;
 }
 
+.sec-projects{
+  position: relative;
+  width: 100%;
+  height: 50rem;
+  align-items: center;
+  padding-top: 5rem;
+  margin: 0;
+
+}
+
+.sec-projects::before{
+  content: '';
+  position: absolute;
+  border-bottom: 100px solid white;
+  border-left: 98.8vw solid transparent;
+  top: -100px;
+  width: 100%;
+}
+
+.sec-projects:after{
+  content: '';
+  position: absolute;
+  border-top: 100px solid white;
+  border-right: 98.8vw solid transparent;
+  bottom: -100px;
+  z-index: 1;
+
+}
+
 .col-img{
-  height: 20rem;
+  height: 12rem;
 
 }
 
 .col-img > img {
   transition: 1.5s;
   object-fit: cover;
+  background: transparent;
 }
 
 
@@ -177,27 +197,59 @@ div.redes>i.bi:hover {
   
 }
 
+.sec-projects h2{
+  font-size: xx-large;
+  font-weight: 800;
+  color: #e53170;
+}
+
+
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 700,
+  'GRAD' 200,
+  'opsz' 48;
+  
+} 
+
+
 .sec-skills{
-  display: flex;
-  background-color: orangered;
+  position: relative;
+  background: #e53170;
   width: 100%;
-  height: 50rem;
-  padding: 2rem;
+  height: 70rem;
+  padding-top: 15rem;
   align-items: center;
+  font-weight: 800;
+  
 }
 
-#skills>i.bi{
-  margin: 1rem;
+.sec-skills h2{
+  font-size: xx-large;
+  font-weight: 800;
+  color: #faebd7;
   padding: 2rem;
-  font-size: 4rem;
-  justify-content: space-between;
-  display: inline-block;
 }
 
 
+#skills{
+  margin-top: 1rem;
+  padding-top: 2rem;
+  justify-content: space-between;
+  display: grid;
+  gap: 1rem;
+  grid-auto-rows: 5rem ;
+  grid-template-columns: repeat(auto-fit, minmax(8rem,1fr));
+  grid-template: max-content;
+  color: black;
 
-#skills>i.bi:hover{
+}
+
+.sec-skills span:hover {
+
   animation: animar-icono 1.2s ease-in-out 1 normal both;
+  filter: invert(88%) sepia(23%) saturate(247%) hue-rotate(337deg) brightness(104%) contrast(96%);
 }
 
 @keyframes animar-icono {
@@ -207,7 +259,7 @@ div.redes>i.bi:hover {
 
   30%{
     transform: scale3d(0.75,1.25,1);
-    color: antiquewhite;
+    color: #faebd7;
   }
 
   50%{
@@ -220,7 +272,7 @@ div.redes>i.bi:hover {
 
   80%{
     transform: scale3d(1.05,0.95,1);
-    color: rgb(33,37,41);
+    color: #212529;
   }
   
   to {
@@ -232,19 +284,31 @@ div.redes>i.bi:hover {
 footer{
   padding-top: 5rem;
   background-color: rgb(33,37,41);
+  color: #ff8906;
+  
 }
 
 footer h5{
-  color: white;
   font-size: x-small;
   padding-left: 15rem;
 
+}
+
+#redes-footer a{
+  text-decoration: none;
+  color: #ff8906;
 }
 
 div #redes-footer{
   display: flex;
   justify-content: space-around;
   padding-right: 10rem;
+
+}
+
+div #redes-footer>a:hover {
+  cursor: pointer;
+  color: antiquewhite ;
 
 }
 

@@ -11,7 +11,10 @@ import { SecProjectsComponent } from './components/sec-projects/sec-projects.com
 import { SecSkillsComponent } from './components/sec-skills/sec-skills.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
+import { MatIconModule } from '@angular/material/icon';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,9 @@ import { HttpClientModule} from '@angular/common/http';
     BrowserModule, 
     FormsModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatIconModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
