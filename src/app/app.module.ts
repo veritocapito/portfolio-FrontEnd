@@ -14,6 +14,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AppRoutingModule } from './routes/app-routing.module';
+import { PortfolioComponent } from './components/portfolio/portfolio.component';
+import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 
 @NgModule({
@@ -24,7 +28,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     SecEducationComponent,
     SecProjectsComponent,
     SecSkillsComponent,
-    FooterComponent
+    FooterComponent,
+    PortfolioComponent,
+    SigninComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule, 
@@ -32,7 +39,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     BrowserAnimationsModule,
     HttpClientModule,
     MatIconModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
