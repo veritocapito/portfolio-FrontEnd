@@ -93,15 +93,22 @@ div.redes>i.bi:hover {
 }
 
 .img-about {
-  float: left;
-  padding: 2rem;
+  float: center;
+  padding: 1rem;
 
 }
 
 .img-about img {
-  border-radius: 5rem;
-  width: 100%;
+  border-radius: 50%;
+  width: 70%;
   height: auto;
+
+}
+
+.content-about{
+  display: inline-flex;
+  flex-direction: column;
+
 }
 
 .sec-education{
@@ -339,7 +346,7 @@ div #redes-footer>a:hover {
   }
   
   .img-about img{
-    max-width: 50%;
+    max-width: 80%;
   }
 
   .sec-education{
@@ -399,7 +406,8 @@ div #redes-footer>a:hover {
   }
   
   .img-about img{
-    max-width: 30%;
+    max-width: 50%;
+
   }
     
   .container-md{
@@ -461,12 +469,11 @@ div #redes-footer>a:hover {
   }
   
   .img-about {
-    float: left;
     padding: 2rem;  
   }
   
   .img-about img{
-    max-width: 100%;
+    max-width: 80%;
   }
     
   .container-md{

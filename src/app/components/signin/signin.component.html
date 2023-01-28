@@ -1,15 +1,35 @@
-<form class="row g-3">
-    <div class="col-md-6">
-        <label for="inputEmail" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail">
-    </div>
-    <div class="col-md-6">
-        <label for="inputPassword4" class="form-label">Contraseña</label>
-        <input type="password" class="form-control" id="inputPassword4">
-    </div>
-    <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="check">
-        <label class="form-check-label" for="check">Seguir conectado/a.</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+<div>
+    <form>
+        <div class="container">
+            <div class="row">
+
+                <div class="img-about">
+                    <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
+                </div>
+
+                <h2 class="text-center fs-3 mb-3">Iniciar Sesión</h2>
+
+                <div class="col-md-12 mb-3">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" formControlName="email" class="form-control" id="inputEmail" >
+                    <div class="text-danger">
+                        <p class="text-danger">El email es requerido.</p>
+                        <p class="text-danger">El formato del email debe ser válido.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-3">
+                    <label for="inputPassword4" class="form-label">Contraseña</label>
+                    <input type="password" formControlName="password" class="form-control" id="inputPassword4">
+                    <div  class="text-danger">
+                        <p  class="text-danger">La contraseña es requerida.</p>
+                        <p  class="text-danger">La contraseña debe ser de 8 o más caracteres.</p>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-dark">Ingresar</button>
+
+            </div>
+        </div>
+    </form>
+</div>

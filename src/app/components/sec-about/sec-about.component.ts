@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+
 
 
 @Component({
@@ -9,13 +9,9 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class SecAboutComponent implements OnInit {  
   aboutMe:any;
-  constructor( private datosPortfolio:PortfolioService) { }
+  constructor( ) { }
 
   ngOnInit(): void {
-    this.datosPortfolio.ObtenerDatos().subscribe(data =>{
-      console.log(data);
-      this.aboutMe=data.about;
-    });
   }
 
 

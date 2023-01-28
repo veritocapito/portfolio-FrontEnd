@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PortfolioService } from 'src/app/services/portfolio.service';
+
 
 @Component({
   selector: 'app-header',
@@ -8,10 +8,17 @@ import { PortfolioService } from 'src/app/services/portfolio.service';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( private datosPortfolio:PortfolioService) { }
+  constructor( ) { }
+  myPortfolio:any;
+
+  show: boolean = false;
 
   ngOnInit(): void {
-    this.datosPortfolio.ObtenerDatos();
+
+  }
+
+  toShow():void{
+    this.show=!this.show;
   }
 
 }

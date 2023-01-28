@@ -5,18 +5,20 @@ import { SigninComponent } from '../components/signin/signin.component';
 import { SignupComponent } from '../components/signup/signup.component';
 import { PortfolioComponent } from '../components/portfolio/portfolio.component';
 
+
 const routes: Routes = [
 
-  {path: "/", redirectTo: "portfolio", pathMatch: "full" },
-  {path: "portfolio", component: PortfolioComponent},
-
-  {path: "signin", component: SigninComponent},
-  {path: "signup", component: SignupComponent}
+  {path: 'portfolio', component: PortfolioComponent, /*canActivate:[GuardGuard]*/},
+  {path: 'signin', component: SigninComponent},
+  {path: 'signup', component: SignupComponent},
+  {path: '**', redirectTo: 'portfolio', pathMatch: 'full' }
 
 ];
 
 @NgModule({
-  declarations: [],
+  declarations: [
+
+  ],
   imports: [ CommonModule, RouterModule.forRoot(routes)],
   exports: [ RouterModule ]
 })

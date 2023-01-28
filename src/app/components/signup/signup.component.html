@@ -1,18 +1,63 @@
-<form>
-    <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-    </div>
-    <div class="col-md-6">
-        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-    </div>
-    <div class="mb-3">
-        <label for="exampleInputPassword1" class="form-label">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1">
-    </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
+<div>
+    <form>
+        <div class="container">
+            <div class="row">
+
+                <div class="img-about">
+                    <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
+                </div>
+
+                <h2 class="text-center fs-3 mb-3">Registrarse</h2>
+
+                <div class="col-md-12 mt-2">
+                    <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre/s" aria-label="Nombre">
+                    <div class="text-danger">
+                        <p class="text-danger">Tu nombre es requerido.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido">
+                    <div class="text-danger">
+                        <p class="text-danger">Tu apellido es requerido.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-12 mt-2">
+                    <input type="email" formControlName="email" class="form-control" placeholder="Email" aria-label="Email">
+                    <div class="text-danger">
+                        <p class="text-danger">Tu email es requerido.</p>
+                        <p class="text-danger">El formato del email debe ser válido.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mb-2">
+                    <input type="password" formControlName="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
+                    <div  class="text-danger">
+                        <p  class="text-danger">Tu contraseña es requerida.</p>
+                        <p  class="text-danger">La contraseña debe ser de 8 o más caracteres.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <input type="text" formControlName="github" class="form-control" placeholder="@usuarioGithub" aria-label="github">
+                    <div class="text-danger">
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <input type="text" formControlName="linkedin" class="form-control" placeholder="@usuarioLinkedin" aria-label="linkedin">
+                    <div class="text-danger">
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-xl-5 text-center">
+                    <button type="submit" class="btn btn-dark">Confirmar</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>

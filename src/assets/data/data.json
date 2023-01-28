@@ -1,10 +1,11 @@
 {
-    "name": "Veronica Capobianco",
+    "name": "Veronica Solange Capobianco",
     "backImage": "",
     "image": "",
-    "position": "Contadora Publica",
+    "role": "FrontEnd Developer",
     "company": {
         "name": "Estudio Capobianco",
+        "position": "Contadora Publica",
         "image": "",
         "url": "#"
     },
