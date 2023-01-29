@@ -1,22 +1,52 @@
 {
     "name": "Veronica Solange Capobianco",
-    "backImage": "",
     "image": "",
+    "age": 42,
     "role": "FrontEnd Developer",
     "company": {
         "name": "Estudio Capobianco",
-        "position": "Contadora Publica",
+        "position": "Contadora Pública",
         "image": "",
         "url": "#"
     },
-    "school": {
+    "education": {
         "name": "Universidad de Flores",
-        "image": "",
-        "url": "#"
+        "image": "../assets/img/UFLO.png",
+        "url": "https://www.uflo.edu.ar",
+        "degree": "Contadora Pública"
     },
     "ubication": "Buenos Aires (Argentina)",
-    "about": "Apasionada por el desarrollo web. Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones."
-
-
-
+    "about": "Apasionada por el desarrollo web. Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.",
+    "experiences": [
+        {
+            "id": "1",
+            "image": "../assets/img/nocountry.png",
+            "company": "No Country",
+            "url": "https://www.nocountry.tech/",
+            "position": "FrontEnd Developer",
+            "start": "Noviembre 2022",
+            "end": "Diciembre 2022",
+            "description": "Participe en el equipo de desarrollo para la implementación de un turnero de clinica medica.  Tecnologias utilizadas: HTML - CSS - Javascritp - Angular."
+        },
+        {
+            "id": "2",
+            "image": "../assets/img/logoEC3.bmp",
+            "company": "Estudio Capobianco",
+            "url": "http://estudiocapobianco.com.ar/",
+            "position": "Contadora Pública",
+            "start": "Septiembre 2016",
+            "end": "Presente",
+            "description": "Socia fundadora en Estudio Capobianco. Especialista en liquidacion de haberes y cargas sociales. Leyes laborales. Asesoramiento integral en RRHH."
+        },
+        {
+            "id": "3",
+            "image": "../assets/img/blasco.png",
+            "company": "Estudio Blasco",
+            "url": "https://www.blasco.com.ar/",
+            "position": "Responsable RRHH",
+            "start": "Julio 2011",
+            "end": "Presente",
+            "description": "Encargada RRHH. Especialista en liquidacion de haberes y cargas sociales. Coordinacion de equipos de trabajo."
+        }
+    ] 
 }
