@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
 
 
 @Component({
@@ -50,7 +49,7 @@ export class SigninComponent implements OnInit {
     if (this.form.valid){
       //Llamamos a nuestro servicio para enviar los datos al servidor. 
       //Tambien podriamos ejecutar alguna logica extra.
-      alert("Todo ok! Enviar formulario!");
+      console.log("Todo ok! Formulario Enviado!");
     } else {
       //Corremos todas las validaciones para que se ejecuten los mensajes de error en el template.
       this.form.markAllAsTouched();

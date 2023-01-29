@@ -1,5 +1,5 @@
 <div>
-    <form>
+    <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
         <div class="container">
             <div class="row">
 
@@ -10,45 +10,47 @@
                 <h2 class="text-center fs-3 mb-3">Registrarse</h2>
 
                 <div class="col-md-12 mt-2">
-                    <input type="text" formControlName="nombre" class="form-control" placeholder="Nombre/s" aria-label="Nombre">
-                    <div class="text-danger">
-                        <p class="text-danger">Tu nombre es requerido.</p>
+                    <input type="text" formControlName="nombre" [class.border-danger]="NombreValid" class="form-control" placeholder="Nombre/s" aria-label="Nombre">
+                    <div *ngIf="Nombre?.errors && Nombre?.touched">
+                        <p *ngIf="Nombre?.hasError('required')" class="error">Tu nombre es requerido.</p>
+                        <p *ngIf="Nombre?.errors?.['maxlength']" class="error">Ingresaste datos inválidos.</p>
                     </div>
                 </div>
 
                 <div class="col-md-12 mt-2">
-                    <input type="text" formControlName="apellido" class="form-control" placeholder="Apellido" aria-label="Apellido">
-                    <div class="text-danger">
-                        <p class="text-danger">Tu apellido es requerido.</p>
+                    <input type="text" formControlName="apellido" [class.border-danger]="ApellidoValid" class="form-control" placeholder="Apellido/s" aria-label="Apellido">
+                    <div *ngIf="Apellido?.errors && Apellido?.touched">
+                        <p *ngIf="Apellido?.hasError('required')" class="error">Tu apellido es requerido.</p>
+                        <p *ngIf="Apellido?.errors?.['maxlength']" class="error">Ingresaste datos inválidos.</p>
                     </div>
                 </div>
-
+                
 
 
                 <div class="col-md-12 mt-2">
-                    <input type="email" formControlName="email" class="form-control" placeholder="Email" aria-label="Email">
-                    <div class="text-danger">
-                        <p class="text-danger">Tu email es requerido.</p>
-                        <p class="text-danger">El formato del email debe ser válido.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-12 mb-2">
-                    <input type="password" formControlName="password" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
-                    <div  class="text-danger">
-                        <p  class="text-danger">Tu contraseña es requerida.</p>
-                        <p  class="text-danger">La contraseña debe ser de 8 o más caracteres.</p>
+                    <input type="email" formControlName="email" [class.border-danger]="MailValid" class="form-control" placeholder="Email" aria-label="Email">
+                    <div *ngIf="Mail?.errors && Mail?.touched">
+                        <p *ngIf="Mail?.hasError('required')" class="error">Tu email es requerido.</p>
+                        <p *ngIf="Mail?.hasError('email')" class="error">El formato del email debe ser válido.</p>
                     </div>
                 </div>
 
                 <div class="col-md-12 mt-2">
-                    <input type="text" formControlName="github" class="form-control" placeholder="@usuarioGithub" aria-label="github">
+                    <input type="password" formControlName="password" [class.border-danger]="PasswordValid" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
+                    <div  *ngIf="Password?.errors && Password?.touched">
+                        <p  *ngIf="Password?.hasError('required')" class="error">Tu contraseña es requerida.</p>
+                        <p  *ngIf="Password?.errors?.['minlength']" class="error">La contraseña debe ser de 8 o más caracteres.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 mt-2">
+                    <input type="text" formControlName="github" class="form-control" placeholder="Url Github (opcional)" aria-label="github">
                     <div class="text-danger">
                     </div>
                 </div>
 
                 <div class="col-md-12 mt-2">
-                    <input type="text" formControlName="linkedin" class="form-control" placeholder="@usuarioLinkedin" aria-label="linkedin">
+                    <input type="text" formControlName="linkedin" class="form-control" placeholder="Url Linkedin (opcional)" aria-label="linkedin">
                     <div class="text-danger">
                     </div>
                 </div>
