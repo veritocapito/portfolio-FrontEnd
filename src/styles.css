@@ -14,7 +14,7 @@
 
 .logo{
   width: 6rem;
-  color: #ff8906;
+  color: #F15E26;
   font-size: medium;
 }
 
@@ -26,7 +26,7 @@
 .redes a{
   text-decoration: none;
   margin-right: 1rem;
-  color:#ff8906;
+  color:#F15E26;
 }
 
 
@@ -37,7 +37,7 @@
 }
 
 .btn-main {
-  color:#ff8906;
+  color:#F15E26;
   margin-right: 2rem;
   text-align: center;
   border: none;
@@ -50,7 +50,7 @@
 }
 
 #redes-footer a:hover{
-  color: #ff8906;
+  color: #F15E26;
 }
 
 div.redes>i.bi{
@@ -150,7 +150,7 @@ div.redes>i.bi:hover {
 }
 
 .card-title a:hover{
-  color: #ff8906;
+  color: #F15E26;
   text-decoration: none;
 }
 
@@ -199,7 +199,7 @@ div.redes>i.bi:hover {
 }
 
 #card-title-exp a:hover{
-  color: #ff8906;
+  color: #F15E26;
   text-decoration: none;
 }
 
@@ -341,7 +341,7 @@ div.redes>i.bi:hover {
 footer{
   padding-top: 5rem;
   background-color: rgb(33,37,41);
-  color: #ff8906;
+  color: #F15E26;
   
 }
 
@@ -353,7 +353,7 @@ footer h5{
 
 #redes-footer a{
   text-decoration: none;
-  color: #ff8906;
+  color: #F15E26;
 }
 
 div #redes-footer{

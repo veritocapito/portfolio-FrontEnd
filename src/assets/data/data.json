@@ -48,5 +48,23 @@
             "end": "Presente",
             "description": "Encargada RRHH. Especialista en liquidacion de haberes y cargas sociales. Coordinacion de equipos de trabajo."
         }
-    ] 
+    ],
+    "skills": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "GIT",
+        "Bootstrap",
+        "Angular",
+        "Python",
+        "MySQL",
+        "Ingles B2",
+        "Trabajo en Equipo",
+        "Responsabilidad",
+        "Capacitación",
+        "Comunicación",
+        "Organización",
+        "Proactividad",
+        "Flexibilidad"
+    ]
 }

@@ -1,3 +1,4 @@
+<app-header></app-header>
 <div>
     <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
         <div class="container">
@@ -7,7 +8,7 @@
                     <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
                 </div>
 
-                <h2 class="text-center fs-3 mb-3">Registrarse</h2>
+                <h2 class="text-center fs-3 mb-4">Registrarse</h2>
 
                 <div class="col-md-12 mt-2">
                     <input type="text" formControlName="nombre" [class.border-danger]="NombreValid" class="form-control" placeholder="Nombre/s" aria-label="Nombre">
@@ -55,7 +56,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-xl-5 text-center">
+                <div class="col-md-12 mt-xl-5 text-center mt-4">
                     <button type="submit" class="btn btn-dark">Confirmar</button>
                 </div>
 
@@ -63,3 +64,6 @@
         </div>
     </form>
 </div>
+<footer>
+        <h4>&copy; 2023 - Design by @veritocapito</h4>
+</footer>
