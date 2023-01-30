@@ -2,64 +2,27 @@
     <div class="container-md">
         <div class="row justify-content-center">
             <div class="col-md-9">
-                <h2 class="text-center mb-5">Educacion</h2>
+                <h2 class="text-center mb-5">Educación</h2>
             </div>
-            <div class="col-md-9">
-                <div class="card mb-1" style="max-width: 100%;">
+
+            <div class="col-md-9" *ngFor="let school of education">
+                <div class="card" style="max-width: 100%;">
                     <div class="row g-0">
                         <div class="col-md-3">
-                            <img src="../../../assets/img/aplogo.png" class="rounded mx-auto d-block mt-3" width="auto" alt="Argentina Programa" id="logos">
+                            <img [src]="school.image" class="rounded mx-auto d-block mt-3" width="auto" [alt]="school.name" id="logos">
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="card-body">
-                                <h5 class="card-title"><a href="https://www.argentina.gob.ar/produccion/transformacion-digital-y-economia-del-conocimiento/argentina-programa" target="_blank" >Argentina Programa</a></h5>
-                                <p class="card-text">Front End estático y dinámico. HTML, CSS, y Javascript. Framework Angular.
-                                Bases de datos. Programación Orientada a Objetos (POO). Backend - Java EE. JSP, Servlets, Sockets y conexión con base de datos. Spring boot. Dev Ops.</p>
-                                <p class="card-text"><small class="text-muted">Cursando actualmente.</small></p>
+                                <h5 class="card-title"><a [href]="school.url" target="_blank" >{{school.name}}</a></h5>
+                                <p class="card-text">{{school.description}}</p>
+                                <p class="card-text"><small class="text-muted">{{school.degree}}</small></p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card mb-1" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="../../../assets/img/codoacodo.png" class="rounded mx-auto d-block mt-3" width="auto" alt="Codo a Codo" id="logos">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://www.buenosaires.gob.ar/educacion/codocodo/el-programa" target="_blank" >Codo a Codo BA</a></h5>
-                                <p class="card-text">HTML y CSS. Maquetación. Animaciones y transformaciones. GIT. Bootstrap. Javascript. Vue.js. Servidores y base de datos. Python y POO. Django.</p>
-                                <p class="card-text"><small class="text-muted"> Titulo obtenido: Desarrollador FullStack Python.</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-1" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="../../../assets/img/utn.jpg" class="rounded mx-auto d-block mt-4" width="auto" alt="UTN" id="logos">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://sceu.frba.utn.edu.ar/e-learning/" target="_blank">Centro de e-Learning UTN FRBA</a></h5>
-                                <p class="card-text">Puesta en marcha y prueba de un proyecto full stack. Base de datos relacional. Desarrollo en NodeJs.
-                                    Conceptos de asincronismos, funciones arrow y funciones anónimas. Desarrollo con HTML, CSS y JavaScript.</p>
-                                <p class="card-text"><small class="text-muted"> Titulo obtenido: FullStack Developer.</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-1" style="max-width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-md-3">
-                            <img src="../../../assets/img/ob.jpg" class="rounded mx-auto d-block mt-3" width="auto" alt="Open BootCamp"  id="logos">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="card-body">
-                                <h5 class="card-title"><a href="https://open-bootcamp.com/" target="_blank">Open BootCamp</a></h5>
-                                <p class="card-text">Hoja de ruta de 0 a desarrollador. Conceptos de la programación. Introducción a la programación. Java Básico. Python. HTML y CSS. JavaScript Básico. ReactJS. Spring.</p>
-                                <p class="card-text"><small class="text-muted">Cursando actualmente.</small></p>
-                            </div>
+                        <div class="col-md-1">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="educationModal" class="btn btn-close-white">
+                                <i class="fa-solid fa-pencil"></i></button>
+                            <button type="submit" data-bs-toggle="modal" data-bs-target="educationModal" class="btn btn-close-white">
+                                <i class="fa-solid fa-trash-can"></i></button>
                         </div>
                     </div>
                 </div>
