@@ -17,6 +17,36 @@
     },
     "ubication": "Buenos Aires (Argentina)",
     "about": "Apasionada por el desarrollo web. Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.",
+    "projects":[
+        {
+            "id": "1",
+            "image": "../assets/img/logoEC0.png",
+            "name": "Estudio Capobianco",
+            "url": "https://github.com/veritocapito/proyecto2",
+            "description": "Startup de Servicios Profesionales. Desarrollo FrontEnd. Tecnologias utilizadas: HTML - CSS - Javascritp - Angular."
+        },
+        {
+            "id": "2",
+            "image": "../assets/img/logoCNC.svg",
+            "name": "Clínica No Country",
+            "url": "https://github.com/No-Country/C8-12-JavaAngular",
+            "description": "Participe como desarrolladora FrontEnd para la implementación de un turnero de clinica medica.  Tecnologias utilizadas: HTML - CSS - Javascritp - Angular."
+        },
+        {
+            "id": "3",
+            "image": "../assets/img/menuResto.png",
+            "name": "Menu Resto Floresta",
+            "url": "https://github.com/veritocapito/proyectoMenu",
+            "description": "Desarrollo de Menu interactivo para Restaurant, implementando codigo de barras. Tecnologias utilizadas: HTML - CSS - Javascritp - Angular."
+        },
+        {
+            "id": "4",
+            "image": "../assets/img/logos.svg",
+            "name": "Sisters Talles Positivos",
+            "url": "https://github.com/veritocapito/sisters",
+            "description": "Participe en el desarrollo de Landing Page de tienda de ropa femenina. Tecnologias utilizadas: HTML - CSS - Javascritp - Angular."
+        }
+    ],
     "experiences": [
         {
             "id": "1",

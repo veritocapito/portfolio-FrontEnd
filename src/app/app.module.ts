@@ -6,6 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatIconModule } from '@angular/material/icon';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AppRoutingModule } from './routes/app-routing.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
+import { FlexLayoutModule} from '@angular/flex-layout';
 
 
 import { AppComponent } from './app.component';
@@ -45,9 +48,13 @@ import { SignupComponent } from './components/signup/signup.component';
     MatIconModule,
     FontAwesomeModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule,
+    MatButtonModule,
+    FlexLayoutModule
   ],
   providers: [ ],
-  bootstrap: [AppComponent]
-})
+  bootstrap: [AppComponent],
+  exports: [MatCardModule ]
+ })
 export class AppModule { }
