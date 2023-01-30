@@ -1,3 +1,7 @@
+form{
+    background-color: antiquewhite;
+}
+
 .container{
     display: flex;
     justify-content: center;
