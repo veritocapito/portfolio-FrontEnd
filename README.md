@@ -1,15 +1,15 @@
 # Personal Portfolio
 
-One Paragraph of project description goes here
+Final project of Argentina Programa's 3er edition.
 
 
 ## Summary  :memo:
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+This project was developed between June 2022 and February 2023, as a result of the learning path proposed by "Argentina Programa". Technologies: HTML - CSS - Boostrap - Angular - Java - Spring Boot.
 
 
 ## Deployment  :white_check_mark:
 
-Add additional notes about how to deploy this on a live system
+Additional notes about how to deploy this on a live system (soon).
 
 
 ## Built With  :link:
