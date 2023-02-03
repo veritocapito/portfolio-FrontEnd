@@ -22,6 +22,16 @@ import { FooterComponent } from './components/footer/footer.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
+import { ModalEducationComponent } from './modals/modal-education/modal-education/modal-education.component';
+import { ModalEducationAddComponent } from './modals/modal-education/modal-education-add/modal-education-add.component';
+import { ModalExperienceAddComponent } from './modals/modal-experience/modal-experience-add/modal-experience-add.component';
+import { ModalExperienceComponent } from './modals/modal-experience/modal-experience/modal-experience.component';
+import { ModalProjectComponent } from './modals/modal-project/modal-project/modal-project.component';
+import { ModalProjectAddComponent } from './modals/modal-project/modal-project-add/modal-project-add.component';
+import { ModalSkillAddComponent } from './modals/modal-skill/modal-skill-add/modal-skill-add.component';
+import { ModalSkillComponent } from './modals/modal-skill/modal-skill/modal-skill.component';
+import { ModalAboutComponent } from './modals/modal-about/modal-about/modal-about.component';
+import { ModalAboutAddComponent } from './modals/modal-about/modal-about-add/modal-about-add.component';
 
 
 
@@ -38,7 +48,17 @@ import { SignupComponent } from './components/signup/signup.component';
     PortfolioComponent,
     SigninComponent,
     SignupComponent,
-    SecExperienceComponent
+    SecExperienceComponent,
+    ModalEducationComponent,
+    ModalEducationAddComponent,
+    ModalExperienceAddComponent,
+    ModalExperienceComponent,
+    ModalProjectComponent,
+    ModalProjectAddComponent,
+    ModalSkillAddComponent,
+    ModalSkillComponent,
+    ModalAboutComponent,
+    ModalAboutAddComponent
   ],
   imports: [
     BrowserModule, 

@@ -1,14 +1,11 @@
 {
-    "name": "Veronica Solange Capobianco",
-    "image": "",
+    "name": "Veronica Solange ",
+    "lastName": "Capobianco",
+    "image": "../assets/img/perfil.jpg",
     "age": 42,
+    "about": "Apasionada por el desarrollo web. Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.",
     "role": "FrontEnd Developer",
-    "company": {
-        "name": "Estudio Capobianco",
-        "position": "Contadora Pública",
-        "image": "",
-        "url": "#"
-    },
+    "ubication": "Buenos Aires (Argentina)",
     "education":[
         {
             "id": "1",
@@ -50,9 +47,7 @@
             "description": "Carrera de grado universitario. Facultad de Administracion. Profesional con una sólida formación en economía, contabilidad, tributación y administración.",
             "degree": "Título obtenido: Contadora Pública."
         }
-    ] ,
-    "ubication": "Buenos Aires (Argentina)",
-    "about": "Apasionada por el desarrollo web. Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.",
+    ],
     "projects":[
         {
             "id": "1",
@@ -116,6 +111,14 @@
         }
     ],
     "skills": [
+        "Resiliencia",
+        "Trabajo en Equipo",
+        "Compromiso",
+        "Capacitación",
+        "Comunicación",
+        "Organización",
+        "Proactividad",
+        "Flexibilidad",
         "HTML",
         "CSS",
         "JavaScript",
@@ -123,14 +126,6 @@
         "Bootstrap",
         "Angular",
         "Python",
-        "MySQL",
-        "Ingles B2",
-        "Trabajo en Equipo",
-        "Responsabilidad",
-        "Capacitación",
-        "Comunicación",
-        "Organización",
-        "Proactividad",
-        "Flexibilidad"
+        "MySQL"
     ]
 }
