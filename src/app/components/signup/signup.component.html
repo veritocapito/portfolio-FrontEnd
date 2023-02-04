@@ -1,16 +1,14 @@
 <app-header></app-header>
-<div>
+<div class="signup">
     <form [formGroup]="form" (ngSubmit)="onSubmit($event)">
         <div class="container">
-            <div class="row">
-
-                <div class="img-about">
+            <div class="row d-flex justify-content-center">
+                <div class="img-sign mb-5">
                     <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
                 </div>
-
                 <h2 class="text-center fs-3 mb-4">Registrarse</h2>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9  mt-2">
                     <input type="text" formControlName="nombre" [class.border-danger]="NombreValid" class="form-control" placeholder="Nombre/s" aria-label="Nombre">
                     <div *ngIf="Nombre?.errors && Nombre?.touched">
                         <p *ngIf="Nombre?.hasError('required')" class="error">Tu nombre es requerido.</p>
@@ -18,7 +16,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9 mt-2">
                     <input type="text" formControlName="apellido" [class.border-danger]="ApellidoValid" class="form-control" placeholder="Apellido/s" aria-label="Apellido">
                     <div *ngIf="Apellido?.errors && Apellido?.touched">
                         <p *ngIf="Apellido?.hasError('required')" class="error">Tu apellido es requerido.</p>
@@ -26,9 +24,7 @@
                     </div>
                 </div>
                 
-
-
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9 mt-2">
                     <input type="email" formControlName="email" [class.border-danger]="MailValid" class="form-control" placeholder="Email" aria-label="Email">
                     <div *ngIf="Mail?.errors && Mail?.touched">
                         <p *ngIf="Mail?.hasError('required')" class="error">Tu email es requerido.</p>
@@ -36,7 +32,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9 mt-2">
                     <input type="password" formControlName="password" [class.border-danger]="PasswordValid" class="form-control" placeholder="Contraseña" aria-label="Contraseña">
                     <div  *ngIf="Password?.errors && Password?.touched">
                         <p  *ngIf="Password?.hasError('required')" class="error">Tu contraseña es requerida.</p>
@@ -44,22 +40,26 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9 mt-2">
                     <input type="text" formControlName="github" class="form-control" placeholder="Url Github (opcional)" aria-label="github">
                     <div class="text-danger">
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-2">
+                <div class="col-md-9 mt-2">
                     <input type="text" formControlName="linkedin" class="form-control" placeholder="Url Linkedin (opcional)" aria-label="linkedin">
                     <div class="text-danger">
                     </div>
                 </div>
 
-                <div class="col-md-12 mt-xl-5 text-center mt-4">
+                <div class="col-md-9 mt-xl-5 text-center mt-4">
                     <button type="submit" class="btn btn-dark">Confirmar</button>
                 </div>
 
+                <div class="col-md-9 mb-3 mt-4">
+                    <p class="text-center">Si ya tenes cuenta ingresa <a routerLink="/signin" class="link-primary">aquí</a></p>
+                </div>
+            
             </div>
         </div>
     </form>

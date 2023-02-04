@@ -1,16 +1,16 @@
 <app-header></app-header>
-<div>
+<div class="signin">
     <form [formGroup]="form" (ngSubmit)="onSubmit($event)"  >
         <div class="container">
-            <div class="row">
+            <div class="row d-flex justify-content-center">
 
-                <div class="img-about">
+                <div class="img-sign mb-5">
                     <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
                 </div>
 
                 <h2 class="text-center fs-3 mb-3">Iniciar Sesión</h2>
 
-                <div class="col-md-12 mb-3">
+                <div class="col-md-9 mb-3">
                     <label for="inputEmail" class="form-label">Email</label>
                     <input type="email" formControlName="email" [class.border-danger]="MailValid" class="form-control" id="inputEmail" >
                     <div *ngIf="Mail?.errors && Mail?.touched">
@@ -19,7 +19,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-12 mb-3">
+                <div class="col-md-9 mb-3">
                     <label for="inputPassword4" class="form-label">Contraseña</label>
                     <input type="password" formControlName="password" [class.border-danger]="PasswordValid"  class="form-control" id="inputPassword">
                     <div  *ngIf="Password?.errors && Password?.touched">
@@ -29,6 +29,10 @@
                 </div>
 
                 <button type="submit" class="btn btn-dark mt-4">Ingresar</button>
+
+                <div class="col-md-9 mb-3 mt-5">
+                    <p class="text-center">Si aun no tenes cuenta registrate <a routerLink="/signup" class="link-primary">aquí</a></p>
+                </div>
 
             </div>
         </div>

@@ -100,8 +100,9 @@ div.redes>i.bi:hover {
 
 .img-about img {
   border-radius: 50%;
-  width: 70%;
-  height: auto;
+  max-width: 50%;
+  display: block;
+  margin: auto;
 
 }
 

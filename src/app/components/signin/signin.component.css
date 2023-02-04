@@ -1,26 +1,27 @@
-form{
-    background-color: antiquewhite;
-}
-
-.container{
+.signin{
     display: flex;
+    background-color: antiquewhite;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
 
-.row{
-    align-content: center;
-    width: 40%;
-    justify-content: center;
+form{
+    max-width: 50%;
 }
 
-img{
-    width: 50%;
+
+.img-sign img {
+    border-radius: 50%;
+    max-width: 150px;
     display: block;
-    margin:auto;
+    margin: auto;
+
 }
 
+a{
+    text-decoration: none;
+}
 button{
     width: 50%;
 }
