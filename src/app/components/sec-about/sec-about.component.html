@@ -1,18 +1,28 @@
 <section class="sec-about">
     <div class="container">
         <div class="container-about">
-            <div class="title">
-                
-                <h1><!--{{aboutMe.name}}-->Verónica Solange Capobianco <span class="material-symbols-rounded">logo_dev</span></h1>
+            <div class="row">
+                <div class="title col-md-10">
+                    <h1><!--{{aboutMe.name}}-->Verónica Solange Capobianco <span class="material-symbols-rounded">logo_dev</span></h1>
+                </div>
+                <div class="col-md-2">
+                    <!-- Button trigger modal -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#aboutModal" class="btn btn-close-dark">
+                        <i class="bi bi-trash"></i></button>
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#aboutnModal" class="btn btn-close-dark">
+                        <i class="bi bi-pencil-square"></i></button>
+                </div>
+                <div class="img-about col-12">
+                    <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
+                </div>
+                <div class="content-about">
+                    <h2><!--{{aboutMe.role}}-->FrontEnd Developer</h2>
+                    <p><!--{{aboutMe.about}}-->Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.</p>
+                </div>
+                <app-modal-about></app-modal-about>
             </div>
-            <div class="img-about">
-                <img src="../../../assets/img/perfil.jpg" alt="Foto de perfil" >
-            </div>
-            <div class="content-about">
-                <h2><!--{{aboutMe.role}}-->FrontEnd Developer</h2>
-                <p><!--{{aboutMe.about}}-->Proactiva, detallista, comprometida, autodidacta. Profesional con amplia experiencia gestionando de equipos de trabajo, con marcada orientacion al servicio al cliente y a la búsqueda de soluciones.</p>
-            </div>
-            <div class="btn btn-dark mt-2">Descargar CV</div>
+            <button class="btn btn-dark mt-2">Descargar CV</button>
+            <a href="mailto:veronica@estudiocapobianco.com.ar" class="btn btn-dark mx-2 px-3 mt-2">Enviar Email</a>
         </div>
     </div>
 </section>

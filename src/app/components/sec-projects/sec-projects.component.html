@@ -12,9 +12,17 @@
                         {{project.description}}
                     </p>
             </mat-card-content>
-            <mat-card-actions>
+            <mat-card-actions class="d-flex">
                 <button mat-raised-button color="">VER MAS</button>
+                <div class="col-md-1 d-flex">
+                    <!-- Button trigger modal -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn-close-dark">
+                        <i class="bi bi-trash"></i></button>
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn-close-dark">
+                        <i class="bi bi-pencil-square"></i></button>
+                </div>
             </mat-card-actions>
+            <app-modal-project></app-modal-project>
         </mat-card>
     </div>
 
