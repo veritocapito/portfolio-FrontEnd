@@ -1,27 +1,31 @@
-# Myportfolio
+# Personal Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
+Final project of Argentina Programa's 3er edition.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Summary  :memo:
+This project was developed between June 2022 and February 2023, as a result of the learning path proposed by "Argentina Programa". Technologies: HTML - CSS - Boostrap - Angular - Java - Spring Boot.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Deployment  :white_check_mark:
 
-## Build
+Additional notes about how to deploy this on a live system (soon).
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Built With  :link:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+* [Angular](https://angular.io/docs)
+* [Maven](https://maven.apache.org/)
+* [Spring Boot](https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/)
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Author :woman:
 
-## Further help
+* **Verónica Capobianco** - *Initial work* - [veritocapito](https://github.com/veritocapito)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Acknowledgments :raised_hands:
+
+* Hat tip to anyone whose code was used
+* Inspiration
+* My family
