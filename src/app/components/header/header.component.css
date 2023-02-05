@@ -1,0 +1,28 @@
+.navbar {
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    position: static;
+  
+}
+
+ .redes a{
+    text-decoration: none;
+    margin-right: 1rem;
+    color:#F15E26;
+}
+
+.redes a:hover {
+    color: white;
+}
+
+div.redes>i.bi{
+    margin: 0.5rem 1rem;
+    font-size: 1.5rem;
+}
+
+div.redes>i.bi:hover {
+    cursor: pointer;
+    color: antiquewhite ;
+
+}
