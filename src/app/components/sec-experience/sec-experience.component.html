@@ -18,15 +18,15 @@
                             <div class="card-body">
                                 <h4 id="card-title-exp" class="card-title"><a [href]="experience.url" target="_blank">{{experience.company}}</a></h4>
                                 <p class="card-text">{{experience.description}}</p>
-                                <p class="card-text"><small class="text-muted">{{experience.startDate}} / {{experience.endDate}}</small></p>
+                                <p class="card-text"><small class="text-muted">{{experience.startDate | date: "dd-mm-yyyy"}} / {{experience.endDate  | date: "dd-mm-yyyy"}}</small></p>
                             </div>
                         </div>
 
                         <div class="col-md-1">
                             <!-- Button trigger modal -->
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#educationModal" class="btn btn-close-white">
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#experienceModal"  class="btn btn-close-white">
                                 <i class="bi bi-trash"></i></button>
-                            <button type="submit" data-bs-toggle="modal" data-bs-target="#educationModal" class="btn btn-close-white">
+                            <button type="submit" data-bs-toggle="modal" data-bs-target="#experienceModal"  class="btn btn-close-white">
                                 <i class="bi bi-pencil-square"></i></button>
                         </div>
                     </div>
