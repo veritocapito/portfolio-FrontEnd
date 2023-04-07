@@ -2,7 +2,7 @@
     <div class="container" >
         <h2 class="text-center">Tecnologias y Habilidades</h2>
         <div class="row justify-content-center mt-5">
-            <div class="col-md-9 text-center" id="skills">
+            <div class="col-md-8 text-center" id="skills">
                 <span><img class="icono" src="../../../assets/img/html5.svg" alt="html" width="25rem"><h4>HTML</h4></span>
                 <span><img class="icono" src="../../../assets/img/css3-alt.svg" alt="css" width="25rem"><h4>CSS</h4></span>
                 <span><img class="icono" src="../../../assets/img/square-js.svg" alt="js" width="25rem"><h4>JavaScript</h4></span>
@@ -11,9 +11,6 @@
                 <span><img class="icono" src="../../../assets/img/angular.svg" alt="angular" width="25rem"><h4>Angular</h4></span>
                 <span><img class="icono" src="../../../assets/img/python.svg" alt="python" width="25rem"><h4>Python</h4></span>
                 <span class="material-symbols-rounded">database<h4>MySQL</h4></span>
-                        </div>
-            <div class="col-md-9 text-center" id="skills">
-                <span class="material-symbols-rounded">language<h4>Ingles B2</h4></span>
                 <span class="material-symbols-rounded">diversity_3<h4>Trabajo en Equipo</h4></span>
                 <span class="material-symbols-rounded">how_to_reg<h4>Responsabilidad</h4></span>
                 <span class="material-symbols-rounded">school<h4>Capacitación</h4></span>
@@ -21,8 +18,15 @@
                 <span class="material-symbols-rounded">event_available<h4>Organización</h4></span>
                 <span class="material-symbols-rounded">follow_the_signs<h4>Proactividad</h4></span>
                 <span class="material-symbols-rounded">transfer_within_a_station<h4>Adaptabilidad</h4></span>
-
             </div>
+            <div class="col-md-1">
+                <!-- Button trigger modal -->
+                <button type="button" data-bs-toggle="modal" data-bs-target="#skillModal" class="btn btn-close-dark">
+                    <i class="bi bi-trash"></i></button>
+                <button type="submit" data-bs-toggle="modal" data-bs-target="#skillModal" class="btn btn-close-dark">
+                    <i class="bi bi-pencil-square"></i></button>
+            </div>
+            <app-modal-skill></app-modal-skill>
         </div>
     </div>
 </section>

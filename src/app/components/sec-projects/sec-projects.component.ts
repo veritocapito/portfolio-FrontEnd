@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
+
 
 @Component({
   selector: 'app-sec-projects',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecProjectsComponent implements OnInit {
 
-  constructor() { }
-
+  //esto es para traer distintos datos (array)
+  projects: any;
+  constructor(private data:DataService){}
+  
   ngOnInit(): void {
+    this.data.getData().subscribe(data => {
+      this.projects = data.projects;
+    })
+  
   }
 
 }

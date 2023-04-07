@@ -1,0 +1,33 @@
+<nav class="navbar navbar-expand-lg bg-dark p-0">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarToggler">
+            <a class="navbar-brand align-text-center" href="http://www.yoprogramo.org.ar/" target="_blank"><img src="../../../assets/img/logo.png" alt="logo" class="logo"><span class="logo"><strong>#Yo Programo</strong></span></a>
+            <ul class="redes d-flex">
+                <li>
+                    <a routerLink="/portfolio"><i class="bi bi-house-fill fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vscapobianco/" target="_blank"><i class="bi bi-linkedin fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://github.com/veritocapito" target="_blank"><i class="bi bi-github fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="https://telegram.me/veritocapito" target="_blank"><i class="bi bi-telegram fa-lg"></i></a>
+                </li>
+                <li>
+                    <a href="mailto:veronica@estudiocapobianco.com.ar"><i class="bi bi-envelope-plus-fill fa-lg"></i></a>
+                </li>
+                <li *ngIf="!userLoginOn">
+                    <a routerLink="/login" >Sing In</a>
+                </li>
+                <li *ngIf="userLoginOn">
+                    <a routerLink="/portfolio" >Sign Out</a>
+                </li>
+            </ul> 
+        </div>      
+    </div>
+</nav>

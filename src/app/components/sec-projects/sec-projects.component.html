@@ -1,47 +1,29 @@
 <section class="sec-projects">
-    <div class="container">
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-9 text-center">
-                <h2 class="mb-5 ">Proyectos</h2>
-            </div>
-        </div>
-        <div class="row justify-content-center mb-5">  
-            <div class="col-md-3 p-2 m-2">
-                <div class="card text-center mb-3">
-                    <div class="col-img">
-                        <img src="../../../assets/img/logoEC.jpg" class="img-thumbnail border-0 mt-5" alt="Estudio Capobianco">
-                    </div>
-                    <div class="card-body mt-5">
-                        <h3 class="card-title">Estudio Capobianco</h3>
-                        <p class="card-text">Startup Servicios Profesionales.</p>
-                        <a href="#" class="btn btn-dark">Ver mas</a>
-                    </div>
+    <h2 class="mb-5 text-center">Proyectos</h2>
+
+    <div class="container-pro">
+        <mat-card *ngFor="let project of projects">
+            <mat-card-header>
+                <mat-card-title class="card-title-pro"><a [href]="project.url" target="_blank" >{{project.name}}</a></mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                    <img mat-card-image fxFlexAlign="center" [src]="project.image" [alt]="project.name" class="card-image">
+                    <p>
+                        {{project.description}}
+                    </p>
+            </mat-card-content>
+            <mat-card-actions class="d-flex">
+                <button mat-raised-button color="">VER MAS</button>
+                <div class="col-md-1 d-flex">
+                    <!-- Button trigger modal -->
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn-close-dark">
+                        <i class="bi bi-trash"></i></button>
+                    <button type="submit" data-bs-toggle="modal" data-bs-target="#projectModal" class="btn btn-close-dark">
+                        <i class="bi bi-pencil-square"></i></button>
                 </div>
-            </div>       
-            <div class="col-md-3 justify-content-between p-2 m-2" >
-                <div class="card text-center mb-3">
-                    <div class="col-img">
-                        <img src="../../../assets/img/logos.jpg" class="img-thumbnail border-0" alt="Sisters Talles Positivos">
-                    </div>        
-                    <div class="card-body mt-5">
-                        <h3 class="card-title">Sisters Talles Positivos</h3>
-                        <p class="card-text">Web tienda de ropa femenina.</p>
-                        <a href="#" class="btn btn-dark">Ver mas</a>
-                    </div>
-                </div>
-            </div>            
-            <div class="col-md-3 p-2 m-2">            
-                <div class="card text-center mb-3" >
-                    <div class="col-img">
-                        <img src="../../../assets/img/MVD.png" class="img-fluid" alt="MVD Calzados">                  
-                    </div>
-                    <div class="card-body mt-5">
-                        <h3 class="card-title">MVD Calzados</h3>
-                        <p class="card-text">Web tienda de calzado infantil.</p>
-                        <a href="#" class="btn btn-dark">Ver mas</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            </mat-card-actions>
+            <app-modal-project></app-modal-project>
+        </mat-card>
     </div>
+
 </section>

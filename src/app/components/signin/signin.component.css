@@ -1,13 +1,19 @@
 .signin{
     display: flex;
     background-color: antiquewhite;
+}
+
+.container{
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
 
-form{
-    max-width: 50%;
+.row{
+    align-content: center;
+    width: 40%;
+    justify-content: center;
 }
 
 
@@ -15,8 +21,7 @@ form{
     border-radius: 50%;
     max-width: 150px;
     display: block;
-    margin: auto;
-
+    margin:auto;
 }
 
 a{
@@ -24,6 +29,7 @@ a{
 }
 button{
     width: 50%;
+    align-self: center;
 }
 
 footer{
