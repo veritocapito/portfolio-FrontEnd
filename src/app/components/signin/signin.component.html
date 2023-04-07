@@ -1,6 +1,6 @@
 <app-header></app-header>
-<div class="signin">
-    <form [formGroup]="form" (ngSubmit)="onSubmit($event)"  >
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit($event)"  >
         <div class="container">
             <div class="row d-flex justify-content-center">
 
@@ -26,18 +26,15 @@
                         <p *ngIf="Password?.hasError('required')" class="error">La contraseña es requerida.</p>
                         <p *ngIf="Password?.errors?.['minlength']" class="error">La contraseña debe ser de 8 o más caracteres.</p>
                     </div>
+
                 </div>
 
                 <button type="submit" class="btn btn-dark mt-4">Ingresar</button>
-
-                <div class="col-md-9 mb-3 mt-5">
-                    <p class="text-center">Si aun no tenes cuenta registrate <a routerLink="/signup" class="link-primary">aquí</a></p>
-                </div>
 
             </div>
         </div>
     </form>
 </div>
-<footer>
+<footer class="fixed-bottom">
     <h4>&copy; 2023 - Design by @veritocapito</h4>
 </footer>
