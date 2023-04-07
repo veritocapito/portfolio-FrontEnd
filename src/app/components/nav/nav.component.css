@@ -1,0 +1,42 @@
+.logo {
+    width: 8rem;
+    color: #F15E26;
+}
+
+.logo:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.navbar-collapse {
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    position: static;
+
+}
+
+.redes a {
+    text-decoration: none;
+    margin: 0.5rem;
+    color: #F15E26;
+}
+
+.redes a:hover {
+    color: white;
+}
+
+div.redes>i.bi {
+    font-size: 1.5rem;
+}
+
+div.redes>i.bi:hover {
+    cursor: pointer;
+    color: antiquewhite;
+
+}
+
+ul{
+    margin: 0;
+    list-style: none;
+}

@@ -19,6 +19,7 @@ import { SecProjectsComponent } from './components/sec-projects/sec-projects.com
 import { SecSkillsComponent } from './components/sec-skills/sec-skills.component';
 import { SecExperienceComponent } from './components/sec-experience/sec-experience.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { NavComponent } from './components/nav/nav.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
@@ -44,6 +45,7 @@ import { ModalAboutAddComponent } from './modals/modal-about/modal-about-add/mod
     SecEducationComponent,
     SecProjectsComponent,
     SecSkillsComponent,
+    NavComponent,
     FooterComponent,
     PortfolioComponent,
     SigninComponent,

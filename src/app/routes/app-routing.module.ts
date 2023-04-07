@@ -7,7 +7,7 @@ import { PortfolioComponent } from '../components/portfolio/portfolio.component'
 
 
 const routes: Routes = [
-
+  
   {path: 'portfolio', component: PortfolioComponent, /*canActivate:[GuardGuard]*/},
   {path: 'signin', component: SigninComponent},
   {path: 'signup', component: SignupComponent},

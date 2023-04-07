@@ -1,28 +1,26 @@
 form{
     background-color: antiquewhite;
+    min-height: 80vh;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh;
-}
-
-.row{
-    align-content: center;
-    width: 40%;
-    justify-content: center;
+    flex-direction: column;
+    padding: 2rem;
 }
 
 img{
     width: 50%;
     display: block;
     margin:auto;
+    border-radius: 50%;
 }
 
 button{
     width: 50%;
+    align-self: center;
 }
 
 footer{
