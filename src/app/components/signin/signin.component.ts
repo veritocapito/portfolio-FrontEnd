@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { LoginService } from 'src/app/services/auth/login.service';
 import { LoginRequest } from 'src/app/services/auth/loginRequest';
@@ -60,6 +60,7 @@ export class SigninComponent implements OnInit {
 
   }*/
 
+//Creamos el grupo de controles para el formulario de login
   loginError:string='';
   loginForm=this.formBuilder.group({
     email: ['veritocapito@gmail.com', [Validators.required, Validators.email]],
