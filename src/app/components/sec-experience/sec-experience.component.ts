@@ -25,7 +25,7 @@ export class SecExperienceComponent implements OnInit {
 
   ngOnInit(): void {
     //this.data.getData().subscribe(data => { this.works = data.experiences;})
-    this.readExperience();
+    this.serveExpe.readExperience();
   }
 
   readExperience():void{
